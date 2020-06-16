@@ -10,9 +10,9 @@ User.destroy_all
 Article.destroy_all
 Favorite.destroy_all 
 
-user1 = User.create(username:'Alex', email: 'bla@bla.net')
-user2 = User.create(username:'Jake', email: 'jake@jake.net')
-user3 = User.create(username:'Jessie', email: 'jes@jes.net')
+user1 = User.create(username:'Alex', email: 'bla@bla.net', pword: 'cat')
+user2 = User.create(username:'Jake', email: 'jake@jake.net', pword: 'dog')
+user3 = User.create(username:'Jessie', email: 'jes@jes.net', pword: 'bird')
 
 article1 = Article.create(author: "Michael S. Derby",
 title: "Fed’s Kaplan Says Systemic Racism Holding Economy Back - The Wall Street Journal",
@@ -22,12 +22,12 @@ urlToImage: "https://images.wsj.net/im-198264/social",
 publishedAt: "2020-06-15T08:14:35Z")
 
 
-# article2 = Article.create(author: "Edmund DeMarche",
-# title: "NBC News called out over tweets about Trump’s Tulsa event and a 'packed' rally in Brooklyn - Fox News",
-# description: "NBC News was called out late Sunday over a pair of tweets sent about an hour apart that critics said showed bias when reporting on President Trump rallies and the protests that have emerged in the wake of George Floyd’s death in police custody.",
-# url: "https://www.foxnews.com/media/nbc-news-called-out-over-tweet-about-trump-rally-and-packed-crowd-in-brooklyn",
-# urlToImage: "https://cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/1320b660-112f-4106-9278-6c73175e61de/75b3ec89-d6a7-414a-b4d6-4f842205a02b/1280x720/match/image.jpg",
-# publishedAt: "2020-06-15T07:10:55Z" )
+ article2 = Article.create(author: "Micaela Heck",
+title: "How to Protest, With Activists L.A. Kauffman and Charlene Carruthers",
+description: "What are our rights when it comes to protesting? How do we protest safely and effectively during this pandemic? We answer these questions and more this week with help from activists L.A. Kauffman and Charlene Carruthers. L.A. is a veteran grassroots organizer…",
+url: "https://lifehacker.com/how-to-protest-with-activists-l-a-kauffman-and-charle-1844037412",
+urlToImage: "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/tefkxcm3bux2f6yvajvm.jpg",
+publishedAt: "2020-06-15T16:45:00Z")
 
 article3 = Article.create(author: "Reuters",
 title: "Supreme Court Declines To Hear Trump's Legal Challenge To 'Sanctuary' Laws",
@@ -39,7 +39,7 @@ publishedAt: "2020-06-15T13:56:55Z")
 Favorite.create(user_id: user1.id, article_id: article1.id)
 Favorite.create(user_id: user2.id, article_id: article1.id)
 Favorite.create(user_id: user1.id, article_id: article3.id)
-# Favorite.create(user_id: user3.id, article_id: article2.id)
+Favorite.create(user_id: user3.id, article_id: article2.id)
 Favorite.create(user_id: user3.id, article_id: article3.id)
 
 puts "seeded..."
