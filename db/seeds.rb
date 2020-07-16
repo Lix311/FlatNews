@@ -1,16 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
 User.destroy_all
 Article.destroy_all
 Favorite.destroy_all 
 
-user1 = User.create(username:'Alex', email: 'bla@bla.net', pword: 'cat')
+user1 = User.create(username:'Mike', email: 'bla@bla.net', pword: 'iammike1')
 user2 = User.create(username:'Jake', email: 'jake@jake.net', pword: 'dog')
 user3 = User.create(username:'Jessie', email: 'jes@jes.net', pword: 'bird')
 
@@ -22,7 +14,7 @@ urlToImage: "https://images.wsj.net/im-198264/social",
 publishedAt: "2020-06-15T08:14:35Z")
 
 
- article2 = Article.create(author: "Micaela Heck",
+article2 = Article.create(author: "Micaela Heck",
 title: "How to Protest, With Activists L.A. Kauffman and Charlene Carruthers",
 description: "What are our rights when it comes to protesting? How do we protest safely and effectively during this pandemic? We answer these questions and more this week with help from activists L.A. Kauffman and Charlene Carruthers. L.A. is a veteran grassroots organizer…",
 url: "https://lifehacker.com/how-to-protest-with-activists-l-a-kauffman-and-charle-1844037412",
