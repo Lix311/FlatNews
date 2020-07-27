@@ -1,25 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+FlatNews Backend 
+- This is the backend for my group Project FlatNews
+- Uses Ruby on Rails with a postgresql database 
 
-Things you may want to cover:
+# gamechanger-back
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # FlatNews
